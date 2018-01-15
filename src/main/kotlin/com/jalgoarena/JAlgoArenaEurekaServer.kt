@@ -8,8 +8,10 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 @EnableEurekaServer
 @EnableHystrixDashboard
-open class JAlgoArenaEurekaServer
-
-fun main(args: Array<String>) {
-    SpringApplication.run(JAlgoArenaEurekaServer::class.java, *args)
+open class JAlgoArenaEurekaServer {
+    companion object {
+        @JvmStatic fun main(args: Array<String>) {
+            SpringApplication.run(JAlgoArenaEurekaServer::class.java, *args)
+        }
+    }
 }
