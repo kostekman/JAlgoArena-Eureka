@@ -30,6 +30,7 @@ repositories {
 
 distDocker {
     exposePort 5000
+    push = true
 }
 
 jar {
